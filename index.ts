@@ -15,7 +15,7 @@ desktop.forEach((file) => {
   const dateNow = new Date();
   const fileDate = new Date(fileArr[1]);
   if (
-    dateNow.getDay() > fileDate.getDay() ||
+    dateNow.getDate() > fileDate.getDate() ||
     dateNow.getMonth() > fileDate.getMonth()
   ) {
     renameSync(
